@@ -1139,14 +1139,6 @@ for dataset in DATASETS:
                alca_producers=["SiStripCalZeroBias", "SiStripCalMinBias", "TkAlMinBias"],
                scenario=ppScenario)
 
-DATASETS = ["SpecialMinimumBias0", "SpecialMinimumBias1"]
-
-for dataset in DATASETS:
-    addDataset(tier0Config, dataset,
-               do_reco=False,
-               alca_producers=["TkAlMinBias"]
-               )
-
 ########################################################
 ### ZeroBias PDs                                     ###
 ########################################################
